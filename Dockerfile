@@ -1,6 +1,6 @@
 FROM python:3.6-alpine
 
-MAINTAINER Adrian Brown <github.com/cloudguruab>
+LABEL maintainer="ap.brown011@gmail.com"
 
 EXPOSE 8000
 
