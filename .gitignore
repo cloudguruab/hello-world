@@ -1,0 +1,5 @@
+folioenv/
+__pycache__/
+pinmailer.py
+notes.txt
+db.sqlite3
