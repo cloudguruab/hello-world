@@ -29,7 +29,7 @@ DEBUG = True
 
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 EMAIL_HOST = 'imap.gmail.com'
 EMAIL_HOST_USER = pinmailer.EMAIL_HOST_USER
 EMAIL_HOST_PASSWORD = pinmailer.EMAIL_HOST_PASSWORD
@@ -147,5 +147,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
+MEDIA_URL = '/images/'
 
 TAILWIND_APP_NAME = 'landingpage'
