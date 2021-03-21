@@ -1,4 +1,4 @@
-folioenv/
+site-env/
 __pycache__/
 pinmailer.py
 notes.txt

@@ -1,16 +1,14 @@
-FROM python:3.6-alpine
+FROM python:3.6-buster
 
 LABEL maintainer="ap.brown011@gmail.com"
 
 EXPOSE 8000
 
-RUN apk add --no-cache gcc python3-dev musl-dev
-
-ADD . /adrianbx
-
 WORKDIR /adrianbx
 
-RUN pip install -r requirements.txt
+COPY requirements.txt ./
+
+RUN pip3 install -r requirements.txt
 
 RUN python adrianbx/manage.py makemigrations
 

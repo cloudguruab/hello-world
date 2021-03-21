@@ -40,7 +40,6 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 # Application definition
 
 INSTALLED_APPS = [
-    'tailwind',
     'landingpage.apps.LandingpageConfig',
     'webapp.apps.WebappConfig',
     'django.contrib.admin',
