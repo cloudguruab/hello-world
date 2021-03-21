@@ -1,17 +1,13 @@
-FROM python:3.6-buster
+FROM python:3
 
-LABEL maintainer="ap.brown011@gmail.com"
-
-EXPOSE 8000
-
-WORKDIR /adrianbx
+WORKDIR /Users/abpyguru/Desktop/github/builds/adrianbx
 
 COPY requirements.txt ./
 
-RUN pip3 install -r requirements.txt
+RUN pip install -r requirements.txt
 
-RUN python adrianbx/manage.py makemigrations
+COPY . .
 
-RUN python adrianbx/manage.py migrate
+ENV PORT=8080
 
-CMD [ "python", "adrianbx/manage.py", "runserver", "0.0.0.0:8000" ]
+CMD ["python3", "manage.py", "runserver"]
