@@ -4,3 +4,5 @@ pinmailer.py
 notes.txt
 db.sqlite3
 .vscode/
+vpc-portfolio.pem
+vpc-portfolio-private.pem
