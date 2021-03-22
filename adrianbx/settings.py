@@ -92,16 +92,28 @@ WSGI_APPLICATION = 'adrianbx.wsgi.application'
 #     }
 # }
 
+# development env
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'portfolio-contact', 
         'USER': 'postgres', 
         'PASSWORD': pinmailer.PASSWORD,
-        'HOST': '', 
-        'PORT': '',
+        'HOST': '127.0.0.1', 
+        'PORT': '5432',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'postgres', 
+#         'USER': 'postgres', 
+#         'PASSWORD': 'postgres',
+#         'HOST': '', 
+#         'PORT': '5432',
+#     }
+# }
 
 
 # Password validation

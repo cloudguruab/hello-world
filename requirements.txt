@@ -4,6 +4,7 @@ black==20.8b1
 certifi==2020.12.5
 chardet==4.0.0
 click==7.1.2
+compose==1.1.1
 conf==0.4.1
 Django==3.1.7
 django-tailwind==1.1.2
